@@ -1,0 +1,61 @@
+.address-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.address-mail,
+.address-tel {
+  display: flex;
+  align-items: center;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.address-tel-img {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.address-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+  fill: var(--secondary-color);
+}
+
+.address-mail-img {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.address-item-header:hover,
+.address-item-header:focus {
+  color: var(--active-color);
+  fill: var(--active-color);
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.address-list:not(:last-child) {
+  margin-right: 50px;
+  display: flex;
+  margin-left: auto;
+}
+
+.address-item-header {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  margin-right: 50px;
+
+  color: var(--secondary-color);
+
+  display: flex;
+  align-items: center;
+
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}

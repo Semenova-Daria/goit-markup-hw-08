@@ -1,0 +1,18 @@
+@media screen and (max-width: 1200px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}

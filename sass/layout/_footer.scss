@@ -1,0 +1,92 @@
+.footer {
+  background: $color-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  display: block;
+
+  &__address {
+    display: block;
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      font-family: $main-font;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+
+      color: #ffffff;
+    }
+  }
+
+  &__join {
+    width: 206px;
+    height: 80px;
+    margin-right: 70px;
+
+    &__title {
+      font-family: $main-font;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: #ffffff;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subscribe {
+    &__title {
+      font-family: $main-font;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: #ffffff;
+
+      margin-bottom: 20px;
+    }
+
+    &__footer {
+      display: flex;
+    }
+
+    &__input {
+      width: 360px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background: $color-footer;
+      outline: none;
+
+      margin-right: 12px;
+      padding-left: 16px;
+
+      color: #ffffff;
+      transition: $transition-animation;
+
+      &:hover,
+      &:focus {
+        border: 1px solid $active-color;
+      }
+    }
+
+    input[name="email"] {
+      color: #ffffff;
+    }
+
+    &__send {
+      margin-left: 10px;
+    }
+  }
+}
