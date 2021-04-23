@@ -36,6 +36,14 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- burger-btn -->
+            <button class="burger-btn" type="button" data-menu-button>
+                <svg class="burger-btn__icon">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+
             <ul class="contact list">
                 <li class="contact__item">
                     <a class="contact__link link" href="mailto:info@devstudio.com" lang="en">
@@ -52,6 +60,50 @@
                         </svg>
                         +38 096 111 11 11
                     </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- mobile-menu -->
+        <div class="mobile-menu" data-menu>
+            <button class="mobile-menu__close-btn" type="button" data-menu-close>
+                <svg class="close-btn__icon">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link mobile-menu__link--active" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="#">Контакты</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-menu__contact list">
+                <li class="mobile-menu__contact-item">
+                    <a href="tel:+380961111111" class="contact-item__tel link">+38 098 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contact-item">
+                    <a href="mailto:info@devstudio.com" class="contact-item__mailto link"
+                        lang="en">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-social__list list">
+                <li class="mobile-social__item">
+                    <a href="#" class="mobile-social__link link">Instagram</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a href="#" class="mobile-social__link link">Twitter</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a href="#" class="mobile-social__link link">Facebook</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a href="#" class="mobile-social__link link">LinkedIn</a>
                 </li>
             </ul>
         </div>

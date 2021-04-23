@@ -5,14 +5,16 @@
   outline: 1px solid red;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 450px;
     margin: 0 auto;
-  }
-
-  .nav__list {
-    display: none;
   }
 }
 

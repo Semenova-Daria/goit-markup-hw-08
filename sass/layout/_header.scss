@@ -1,3 +1,20 @@
 .header-boder {
   border: 1px solid #ececec;
 }
+
+@media screen and (max-width: 768px) {
+  .logo .header {
+    // padding-top: 26px;
+    // padding-bottom: 26px;
+    width: 134px;
+    height: 28px;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+}

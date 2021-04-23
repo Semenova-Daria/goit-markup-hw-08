@@ -2,7 +2,7 @@
 .mobile-menu__close-btn {
   background-color: transparent;
   border: none;
-  padding: 0;
+  padding: 10px 15px;
   cursor: pointer;
 }
 
@@ -89,7 +89,7 @@
   }
 
   .is-open {
-    transform: translateY(0) translateX(-50%);
+    transform: translateY(100%) translateX(-50%);
   }
 }
 
