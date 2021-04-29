@@ -199,7 +199,10 @@
       &:hover,
       &:focus {
         color: $active-color;
-        fill: $active-color;
+
+        .contact__icon {
+          fill: $active-color;
+        }
       }
     }
 

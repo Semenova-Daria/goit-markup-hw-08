@@ -3,6 +3,10 @@
     background: #f5f4fa;
     padding: 60px 0;
 
+    &__list {
+      width: 450px;
+    }
+
     &__title {
       font-family: $main-font;
       font-weight: bold;
@@ -20,11 +24,6 @@
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
-
-      // &:not(last-child) {
-      //   flex-basis: calc(100% / 4-30px);
-      //   margin-left: 30px;
-      //   margin-top: 30px;
 
       margin-bottom: 30px;
     }
@@ -57,6 +56,16 @@
       margin-bottom: 16px;
 
       color: $secondary-color;
+    }
+  }
+
+  .social-list {
+    justify-content: center;
+
+    &__item {
+      &:not(:last-child) {
+        padding-right: 10px;
+      }
     }
   }
 }
@@ -129,6 +138,16 @@
       margin-bottom: 16px;
 
       color: $secondary-color;
+    }
+  }
+
+  .social-list {
+    justify-content: center;
+
+    &__item {
+      &:not(:last-child) {
+        padding-right: 10px;
+      }
     }
   }
 }
