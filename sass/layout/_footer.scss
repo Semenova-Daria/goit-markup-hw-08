@@ -27,7 +27,10 @@
     }
 
     .address {
-      text-align: center;
+      &__list {
+        padding-bottom: 60px;
+      }
+
       &__item {
         text-align: center;
 
@@ -51,8 +54,10 @@
     &__join {
       width: 206px;
       height: 80px;
-      margin-right: 70px;
+      // margin-right: 70px;
+    }
 
+    .join {
       &__title {
         font-family: $main-font;
         font-weight: bold;
@@ -66,151 +71,182 @@
         margin-bottom: 20px;
       }
     }
+  }
 
-    &__subscribe {
-      &__title {
-        font-family: $main-font;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-
-        color: #ffffff;
-
-        margin-bottom: 20px;
-      }
-
-      &__footer {
-        display: flex;
-      }
-
-      &__input {
-        width: 360px;
-        height: 50px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        background: $color-footer;
-        outline: none;
-
-        margin-right: 12px;
-        padding-left: 16px;
-
-        color: #ffffff;
-        transition: $transition-animation;
-
-        &:hover,
-        &:focus {
-          border: 1px solid $active-color;
-        }
-      }
-
-      input[name="email"] {
-        color: #ffffff;
-      }
-
-      &__send {
-        margin-left: 10px;
-      }
+  .contact {
+    &__link {
+      display: block;
+      text-align: center;
     }
   }
 }
 
-// @media screen and (min-width: 1200px) {
-//   .footer {
-//     background: $color-footer;
-//     padding-top: 60px;
-//     padding-bottom: 60px;
+.social-list {
+  padding-bottom: 60px;
+}
 
-//     display: block;
+.subscribe {
+  text-align: center;
+  &__title {
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-//     &__address {
-//       display: block;
+    color: #ffffff;
 
-//       &__item:not(:last-child) {
-//         margin-bottom: 10px;
-//       }
+    margin-bottom: 20px;
+  }
 
-//       &__link {
-//         font-family: $main-font;
-//         font-weight: normal;
-//         font-size: 14px;
-//         line-height: 1.71;
-//         letter-spacing: 0.03em;
+  &__footer {
+    width: 100%;
+  }
 
-//         color: #ffffff;
-//       }
-//     }
+  &__input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: $color-footer;
+    outline: none;
 
-//     &__join {
-//       width: 206px;
-//       height: 80px;
-//       margin-right: 70px;
+    margin-right: 12px;
+    padding-left: 16px;
+    margin-bottom: 20px;
 
-//       &__title {
-//         font-family: $main-font;
-//         font-weight: bold;
-//         font-size: 14px;
-//         line-height: 1.14;
-//         letter-spacing: 0.03em;
-//         text-transform: uppercase;
+    color: #ffffff;
+    transition: $transition-animation;
 
-//         color: #ffffff;
+    &:hover,
+    &:focus {
+      border: 1px solid $active-color;
+    }
 
-//         margin-bottom: 20px;
-//       }
-//     }
+    input[name="email"] {
+      color: #ffffff;
+    }
+  }
 
-//     &__subscribe {
-//       &__title {
-//         font-family: $main-font;
-//         font-weight: bold;
-//         font-size: 14px;
-//         line-height: 1.14;
-//         letter-spacing: 0.03em;
-//         text-transform: uppercase;
+  &__send {
+    margin-left: 10px;
+  }
+}
 
-//         color: #ffffff;
+@media screen and (min-width: 768px) {
+  .footer {
+    background: $color-footer;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-//         margin-bottom: 20px;
-//       }
+    display: block;
 
-//       &__footer {
-//         display: flex;
-//       }
+    &__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
 
-//       &__input {
-//         width: 360px;
-//         height: 50px;
-//         border: 1px solid rgba(255, 255, 255, 0.3);
-//         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//         border-radius: 4px;
-//         background: $color-footer;
-//         outline: none;
+      &__address {
+        text-align: center;
+        margin-bottom: 60px;
 
-//         margin-right: 12px;
-//         padding-left: 16px;
+        &__item:not(:last-child) {
+          margin-bottom: 10px;
+        }
 
-//         color: #ffffff;
-//         transition: $transition-animation;
+        &__link {
+          font-family: $main-font;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 1.71;
+          letter-spacing: 0.03em;
 
-//         &:hover,
-//         &:focus {
-//           border: 1px solid $active-color;
-//         }
-//       }
+          color: #ffffff;
+        }
+      }
 
-//       input[name="email"] {
-//         color: #ffffff;
-//       }
+      &__join {
+        width: 206px;
+        // height: 80px;
+        // margin-right: 70px;
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 60px;
 
-//       &__send {
-//         margin-left: 10px;
-//       }
-//     }
-//   }
-// }
+        &__title {
+          font-family: $main-font;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+
+          color: #ffffff;
+
+          margin-bottom: 20px;
+        }
+      }
+
+      &__subscribe {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        &__title {
+          font-family: $main-font;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+
+          color: #ffffff;
+
+          margin-bottom: 20px;
+        }
+
+        &__footer {
+          display: flex;
+        }
+
+        &__input {
+          width: 360px;
+          height: 50px;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          border-radius: 4px;
+          background: $color-footer;
+          outline: none;
+
+          margin-right: 12px;
+          padding-left: 16px;
+
+          color: #ffffff;
+          transition: $transition-animation;
+
+          &:hover,
+          &:focus {
+            border: 1px solid $active-color;
+          }
+        }
+
+        input[name="email"] {
+          color: #ffffff;
+        }
+
+        &__send {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
 
 // @media screen and (min-width: 1200px) {
 //   .footer {
