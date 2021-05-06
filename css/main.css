@@ -878,14 +878,16 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .footer__content__address {
+  .footer__address {
     text-align: center;
-    margin-bottom: 60px;
   }
-  .footer__content__address__item:not(:last-child) {
+  .footer__address .address__list {
+    text-align: center;
+  }
+  .footer__address .address__item:not(:last-child) {
     margin-bottom: 10px;
   }
-  .footer__content__address__link {
+  .footer__address .address__link {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-size: 14px;
@@ -893,14 +895,14 @@ button {
     letter-spacing: 0.03em;
     color: #ffffff;
   }
-  .footer__content__join {
+  .footer__join {
     width: 206px;
     display: inline-block;
     align-items: center;
     text-align: center;
     margin-bottom: 60px;
   }
-  .footer__content__join__title {
+  .footer__join__title {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 14px;
@@ -910,14 +912,14 @@ button {
     color: #ffffff;
     margin-bottom: 20px;
   }
-  .footer__content__subscribe {
+  .footer__subscribe {
     display: inline-flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  .footer__content__subscribe__title {
+  .footer__subscribe__title {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 14px;
@@ -927,10 +929,10 @@ button {
     color: #ffffff;
     margin-bottom: 20px;
   }
-  .footer__content__subscribe__footer {
+  .footer__subscribe__footer {
     display: flex;
   }
-  .footer__content__subscribe__input {
+  .footer__subscribe__input {
     width: 360px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -943,13 +945,13 @@ button {
     color: #ffffff;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
-  .footer__content__subscribe__input:hover, .footer__content__subscribe__input:focus {
+  .footer__subscribe__input:hover, .footer__subscribe__input:focus {
     border: 1px solid #2196f3;
   }
-  .footer__content__subscribe input[name="email"] {
+  .footer__subscribe input[name="email"] {
     color: #ffffff;
   }
-  .footer__content__subscribe__send {
+  .footer__subscribe__send {
     margin-left: 10px;
   }
 }
