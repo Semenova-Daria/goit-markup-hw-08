@@ -140,7 +140,6 @@ button {
 
 .social-list {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -525,7 +524,7 @@ button {
   border: 1px solid #ececec;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .logo {
     font-size: 24px;
     line-height: 1.16;
@@ -688,6 +687,7 @@ button {
     margin-right: 0;
   }
   .contact__link {
+    display: flex;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -728,12 +728,13 @@ button {
     margin-right: 50px;
     padding-bottom: 0;
   }
-  .contact__icon {
+  .contact__item__icon {
     display: flex;
     align-items: center;
     margin-right: 10px;
   }
-  .contact__link {
+  .contact__item__link {
+    display: flex;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -744,215 +745,9 @@ button {
     align-items: center;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
-  .contact__link:hover, .contact__link:focus {
+  .contact__item__link:hover, .contact__item__link:focus {
     color: #2196f3;
     fill: #2196f3;
-  }
-  .contact__icon {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .footer {
-    text-align: center;
-    background: #2f303a;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: block;
-  }
-  .footer__address {
-    display: block;
-    text-align: center;
-  }
-  .footer .logo__footer {
-    width: 100%;
-    margin-bottom: 20px;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
-  .footer .address__list {
-    padding-bottom: 60px;
-  }
-  .footer .address__item {
-    text-align: center;
-  }
-  .footer .address__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  .footer .address__link {
-    font-family: "Roboto", sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #ffffff;
-  }
-  .footer__join {
-    width: 206px;
-    height: 80px;
-  }
-  .footer .join__title {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  .contact__link {
-    display: block;
-    text-align: center;
-  }
-}
-
-.social-list {
-  padding-bottom: 60px;
-}
-
-.subscribe {
-  text-align: center;
-}
-
-.subscribe__title {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.subscribe__footer {
-  width: 100%;
-}
-
-.subscribe__input {
-  width: 100%;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: #2f303a;
-  outline: none;
-  margin-right: 12px;
-  padding-left: 16px;
-  margin-bottom: 20px;
-  color: #ffffff;
-  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-
-.subscribe__input:hover, .subscribe__input:focus {
-  border: 1px solid #2196f3;
-}
-
-.subscribe__input input[name="email"] {
-  color: #ffffff;
-}
-
-.subscribe__send {
-  margin-left: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    background: #2f303a;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: block;
-  }
-  .footer__content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .footer__address {
-    text-align: center;
-  }
-  .footer__address .address__list {
-    text-align: center;
-  }
-  .footer__address .address__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  .footer__address .address__link {
-    font-family: "Roboto", sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-  }
-  .footer__join {
-    width: 206px;
-    display: inline-block;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  .footer__join__title {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  .footer__subscribe {
-    display: inline-flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer__subscribe__title {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  .footer__subscribe__footer {
-    display: flex;
-  }
-  .footer__subscribe__input {
-    width: 360px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background: #2f303a;
-    outline: none;
-    margin-right: 12px;
-    padding-left: 16px;
-    color: #ffffff;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  }
-  .footer__subscribe__input:hover, .footer__subscribe__input:focus {
-    border: 1px solid #2196f3;
-  }
-  .footer__subscribe input[name="email"] {
-    color: #ffffff;
-  }
-  .footer__subscribe__send {
-    margin-left: 10px;
   }
 }
 
@@ -1262,9 +1057,6 @@ button {
     background: #f5f4fa;
     padding: 60px 0;
   }
-  .team__list {
-    width: 450px;
-  }
   .team__title {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -1280,6 +1072,9 @@ button {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
+  }
+  .team__image {
+    width: 100%;
   }
   .team__card {
     padding: 30px;
@@ -1346,6 +1141,9 @@ button {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+  }
+  .team__image {
+    width: 100%;
   }
   .team__card {
     padding: 30px;
@@ -1598,7 +1396,7 @@ button {
     fill: #afb1b8;
   }
   .client__item:not(last-child) {
-    flex-basis: calc(100% / 6-30px);
+    flex-basis: calc(100% / 6 - 30px);
     margin-left: 30px;
     margin-top: 30px;
   }
@@ -1743,5 +1541,346 @@ button {
 
 .projects__info {
   padding: 20px 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: block;
+  }
+  .footer__address {
+    display: block;
+    text-align: center;
+  }
+  .footer .logo__footer {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .footer .address__list {
+    padding-bottom: 60px;
+  }
+  .footer .address__item {
+    text-align: center;
+  }
+  .footer .address__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer .address__link {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #ffffff;
+  }
+  .footer .join {
+    margin-bottom: 60px;
+  }
+  .footer .join__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .contact__link {
+    display: block;
+    text-align: center;
+  }
+  .subscribe {
+    display: block;
+    text-align: center;
+  }
+  .subscribe__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .subscribe__footer {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe__input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+    outline: none;
+    margin-right: 12px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+  .subscribe__input:hover, .subscribe__input:focus {
+    border: 1px solid #2196f3;
+  }
+  .subscribe__input input[name="email"] {
+    color: #ffffff;
+  }
+  .subscribe__send {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: center;
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: block;
+  }
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer .logo__footer {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .join {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+  }
+  .join__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .address__item {
+    text-align: center;
+  }
+  .address__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .address__link {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #ffffff;
+  }
+  .social-list__item {
+    text-align: center;
+  }
+  .social-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .social-list__link {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #ffffff;
+  }
+  .contact__link {
+    display: block;
+    text-align: center;
+  }
+  .subscribe {
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .subscribe__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .subscribe__footer {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .subscribe__input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+    outline: none;
+    margin-right: 12px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+  .subscribe__input:hover, .subscribe__input:focus {
+    border: 1px solid #2196f3;
+  }
+  .subscribe__input input[name="email"] {
+    color: #ffffff;
+  }
+  .subscribe__send {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: block;
+  }
+  .footer__container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .footer__content {
+    justify-content: space-between;
+  }
+  .footer__address {
+    display: block;
+    text-align: left;
+    margin-right: 70px;
+  }
+  .footer .logo__footer {
+    text-align: left;
+  }
+  .address {
+    display: block;
+    text-align: left;
+  }
+  .address__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .address__link {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  .contact__link {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: left;
+  }
+  .join {
+    width: 206px;
+    height: 80px;
+    margin-right: 70px;
+  }
+  .join__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .subscribe {
+    display: unset;
+    text-align: unset;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .subscribe__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .subscribe__footer {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .subscribe__input {
+    width: 360px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+    outline: none;
+    margin-right: 12px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+  .subscribe__input:hover, .subscribe__input:focus {
+    border: 1px solid #2196f3;
+  }
+  .subscribe__input input[name="email"] {
+    color: #ffffff;
+  }
+  .subscribe input[name="email"] {
+    color: #ffffff;
+  }
+  .subscribe__send {
+    margin-left: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
