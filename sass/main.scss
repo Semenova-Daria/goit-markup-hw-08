@@ -5,17 +5,17 @@
 @import "./base/common";
 @import "./base/container";
 
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/modal-form";
 @import "./components/logo";
 @import "./components/contact";
 @import "./components/social-list";
 @import "./components/button";
 @import "./components/overlay";
-
 @import "./components/navigation";
-@import "./components/backdrop";
-@import "./components/modal";
-@import "./components/modal-form";
 
+@import "./layout/footer";
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/features";
@@ -24,4 +24,3 @@
 @import "./layout/client";
 @import "./layout/filters";
 @import "./layout/projects";
-@import "./layout/footer";

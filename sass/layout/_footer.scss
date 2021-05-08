@@ -147,10 +147,6 @@
       justify-content: space-around;
     }
 
-    // &__address {
-    //   text-align: center;
-    // }
-
     .logo {
       &__footer {
         width: 100%;
@@ -162,6 +158,15 @@
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
+      }
+    }
+
+    .contact {
+      &__link {
+        display: block;
+        text-align: center;
+
+        color: $secondary-color;
       }
     }
   }
@@ -329,6 +334,14 @@
         text-align: left;
       }
     }
+
+    .contact {
+      &__link {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+      }
+    }
   }
 
   .address {
@@ -348,24 +361,6 @@
       letter-spacing: 0.03em;
 
       color: #ffffff;
-    }
-  }
-
-  .contact {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-
-    &__link {
-      font-family: $main-font;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      color: $secondary-color;
-
-      // text-align: left;
-      display: flex;
     }
   }
 
