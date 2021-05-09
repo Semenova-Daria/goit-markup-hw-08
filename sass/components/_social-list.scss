@@ -1,7 +1,10 @@
 .social-list {
   display: flex;
-  // align-items: center;
   justify-content: space-between;
+
+  &__item {
+    text-align: center;
+  }
 
   &__link {
     display: flex;
