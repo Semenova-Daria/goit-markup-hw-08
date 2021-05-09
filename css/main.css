@@ -204,9 +204,6 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 32px;
-  display: flex;
-  align-items: center;
   color: #212121;
 }
 
@@ -223,6 +220,7 @@ button {
   letter-spacing: 0.02em;
   color: #212121;
   display: block;
+  padding: 32px 0;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -1032,11 +1030,10 @@ button {
     display: flex;
     align-items: center;
     fill: #757575;
+    margin-bottom: 0;
   }
   .contact__item:not(:last-child) {
-    display: flex;
     margin-right: 50px;
-    padding-bottom: 0;
   }
   .contact__item__icon {
     display: flex;
@@ -1733,6 +1730,18 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+  .filters__list {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+  }
+  .filters__list:first-child {
+    color: #ffffff;
+    border-color: #2196f3;
+  }
   .filters__item {
     border-radius: 4px;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -1747,14 +1756,6 @@ button {
   .filters__item:focus, .filters__item:hover {
     color: #2196f3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-  .filters__list {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-bottom: 40px;
   }
   .btn-portfolio {
     font-family: "Roboto", sans-serif;
@@ -1786,6 +1787,9 @@ button {
     border-radius: 4px;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
+  .filters__item:first-child {
+    color: #2196f3;
+  }
   .filters__item:focus, .filters__item:hover {
     color: #2196f3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1794,6 +1798,10 @@ button {
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
+  }
+  .filters__list:first-child {
+    color: #ffffff;
+    border-color: #2196f3;
   }
   .btn-portfolio {
     font-family: "Roboto", sans-serif;
@@ -1833,6 +1841,10 @@ button {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
+  }
+  .filters__list:first-child {
+    color: #ffffff;
+    border-color: #2196f3;
   }
   .btn-portfolio {
     font-family: "Roboto", sans-serif;

@@ -9,10 +9,8 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    padding: 32px 32px;
-
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 
     color: $accent-color;
   }
@@ -31,6 +29,7 @@
     color: $accent-color;
 
     display: block;
+    padding: 32px 0;
 
     transition: $transition-animation;
 
