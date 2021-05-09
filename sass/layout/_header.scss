@@ -23,7 +23,12 @@
   }
 
   .mobile-menu {
+    flex-direction: column;
+    margin-top: auto;
+
     position: fixed;
+    overflow-y: scroll;
+    display: flex;
     top: 0;
     left: 0;
     width: 100vw;
@@ -42,10 +47,6 @@
       position: absolute;
       top: 10px;
       right: 15px;
-    }
-
-    &__list {
-      display: flex;
     }
 
     &__item {
@@ -73,6 +74,9 @@
   }
 
   .mobile-contact {
+    flex-direction: column-reverse;
+    margin-top: auto;
+
     left: auto;
     bottom: 0;
   }
@@ -177,6 +181,8 @@
   }
 
   .contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: inline-block;
     align-items: center;
     margin-left: auto;
@@ -184,8 +190,11 @@
     &__item {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
       fill: $secondary-color;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
 
     &__link {

@@ -193,6 +193,17 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 480px) {
+  .overlay {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -854,7 +865,7 @@ button {
   .footer__address {
     display: block;
     text-align: center;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
   .footer .logo__footer {
     width: 100%;
@@ -957,6 +968,9 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .footer__address {
+    margin-bottom: 60px;
+  }
   .footer .logo__footer {
     width: 100%;
     margin-bottom: 20px;
@@ -1024,7 +1038,6 @@ button {
   text-align: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
 }
 
 .subscribe__title {
@@ -1094,6 +1107,7 @@ button {
     display: block;
     text-align: left;
     margin-right: 70px;
+    margin-bottom: 0;
   }
   .footer .logo__footer {
     text-align: left;
@@ -1207,7 +1221,11 @@ button {
     display: none;
   }
   .mobile-menu {
+    flex-direction: column;
+    margin-top: auto;
     position: fixed;
+    overflow-y: scroll;
+    display: flex;
     top: 0;
     left: 0;
     width: 100vw;
@@ -1224,9 +1242,6 @@ button {
     position: absolute;
     top: 10px;
     right: 15px;
-  }
-  .mobile-menu__list {
-    display: flex;
   }
   .mobile-menu__item {
     font-family: "Roboto", sans-serif;
@@ -1246,6 +1261,8 @@ button {
     color: #2196f3;
   }
   .mobile-contact {
+    flex-direction: column-reverse;
+    margin-top: auto;
     left: auto;
     bottom: 0;
   }
@@ -1334,6 +1351,8 @@ button {
     display: flex;
   }
   .contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: inline-block;
     align-items: center;
     margin-left: auto;
@@ -1341,8 +1360,10 @@ button {
   .contact__item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
     fill: #757575;
+  }
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
   }
   .contact__link {
     display: flex;
@@ -1764,7 +1785,7 @@ button {
     justify-content: center;
   }
   .social-list__item:not(:last-child) {
-    padding-right: 10px;
+    margin-right: 10px;
   }
 }
 

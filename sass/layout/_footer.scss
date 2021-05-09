@@ -10,7 +10,7 @@
     &__address {
       display: block;
       text-align: center;
-      padding-bottom: 60px;
+      margin-bottom: 60px;
     }
 
     .logo {
@@ -144,6 +144,10 @@
       justify-content: space-around;
     }
 
+    &__address {
+      margin-bottom: 60px;
+    }
+
     .logo {
       &__footer {
         width: 100%;
@@ -188,10 +192,6 @@
   }
 
   .address {
-    // &__list {
-    //   padding-bottom: 60px;
-    // }
-
     &__item {
       text-align: center;
 
@@ -238,7 +238,6 @@
   text-align: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
 
   &__title {
     font-family: $main-font;
@@ -314,6 +313,7 @@
       display: block;
       text-align: left;
       margin-right: 70px;
+      margin-bottom: 0;
     }
 
     .logo {
