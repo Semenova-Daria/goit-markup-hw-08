@@ -6,6 +6,12 @@
       flex-direction: column;
     }
 
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
     &__image {
       height: 120px;
       background-size: 450px 120px;
@@ -104,8 +110,8 @@
   .features {
     display: flex;
     align-items: center;
-    padding-bottom: $section-p;
-    padding-top: $section-p;
+    padding-top: 94px;
+    padding-bottom: 0;
 
     &__list {
       display: flex;
