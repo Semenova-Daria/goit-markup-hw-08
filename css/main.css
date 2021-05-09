@@ -1225,6 +1225,9 @@ button {
     top: 10px;
     right: 15px;
   }
+  .mobile-menu__list {
+    display: flex;
+  }
   .mobile-menu__item {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -1242,8 +1245,11 @@ button {
   .mobile-menu__link:hover, .mobile-menu__link:focus {
     color: #2196f3;
   }
+  .mobile-contact {
+    left: auto;
+    bottom: 0;
+  }
   .contact-mobile {
-    padding-top: 300px;
     padding-bottom: 64px;
   }
   .contact-mobile__item:not(:last-child) {
@@ -1433,7 +1439,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 120px 204px;
+    padding: 120px 0;
     background-color: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img-tablet.jpg");
     background-repeat: no-repeat;
@@ -2080,7 +2086,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
   .filters__item {
     border-radius: 4px;
@@ -2138,7 +2144,7 @@ button {
   .filters__list {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   .filters__list:first-child {
     color: #ffffff;
@@ -2176,7 +2182,7 @@ button {
   .filters__list {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
   .filters__item {
     margin-right: 8px;
@@ -2236,7 +2242,7 @@ button {
   .projects__item:not(last-child) {
     flex-basis: calc(100% / 1 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .projects__item:hover, .projects__item:focus {
     background: #ffffff;
@@ -2311,7 +2317,7 @@ button {
   .projects__item:not(last-child) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .projects__item:hover, .projects__item:focus {
     background: #ffffff;
@@ -2321,6 +2327,7 @@ button {
   }
   .projects__link {
     background: #ffffff;
+    border: 1px solid #eeeeee;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -2332,6 +2339,8 @@ button {
   }
   .projects__link:hover .overlay, .projects__link:focus .overlay {
     transform: translateY(0);
+    font-size: 18px;
+    line-height: 1.56;
   }
   .projects__content {
     position: relative;
@@ -2384,7 +2393,7 @@ button {
   .projects__item:not(last-child) {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .projects__item:hover, .projects__item:focus {
     background: #ffffff;

@@ -44,6 +44,10 @@
       right: 15px;
     }
 
+    &__list {
+      display: flex;
+    }
+
     &__item {
       font-family: $main-font;
       font-weight: 500;
@@ -68,8 +72,11 @@
     }
   }
 
+  .mobile-contact {
+    left: auto;
+    bottom: 0;
+  }
   .contact-mobile {
-    padding-top: 300px;
     padding-bottom: 64px;
 
     &__item {

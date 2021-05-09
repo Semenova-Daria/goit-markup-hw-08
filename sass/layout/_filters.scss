@@ -6,7 +6,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-start;
-      padding-bottom: 40px;
+      margin-bottom: 40px;
     }
 
     &__item {
@@ -86,7 +86,7 @@
     &__list {
       display: flex;
       justify-content: center;
-      padding-bottom: 30px;
+      margin-bottom: 30px;
       &:first-child {
         color: #ffffff;
         border-color: $active-color;
@@ -134,7 +134,7 @@
     &__list {
       display: flex;
       justify-content: center;
-      padding-bottom: 50px;
+      margin-bottom: 50px;
     }
 
     &__item {

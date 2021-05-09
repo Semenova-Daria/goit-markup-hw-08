@@ -15,15 +15,12 @@
     }
 
     &__item {
-      // flex-basis: calc((100% - 30px * 3) / 3);
-      // margin-left: 30px;
-      // margin-bottom: 30px;
       transition: $transition-animation;
 
       &:not(last-child) {
         flex-basis: calc(100% / 1 - 30px);
         margin-left: 30px;
-        margin-top: 30px;
+        margin-bottom: 30px;
       }
 
       &:hover,
@@ -118,7 +115,7 @@
       &:not(last-child) {
         flex-basis: calc(100% / 2 - 30px);
         margin-left: 30px;
-        margin-top: 30px;
+        margin-bottom: 30px;
       }
 
       &:hover,
@@ -133,6 +130,7 @@
 
     &__link {
       background: #ffffff;
+      border: 1px solid #eeeeee;
       box-sizing: border-box;
       width: 100%;
       height: 100%;
@@ -146,6 +144,8 @@
 
         .overlay {
           transform: translateY(0);
+          font-size: 18px;
+          line-height: 1.56;
         }
       }
     }
@@ -206,15 +206,12 @@
     }
 
     &__item {
-      // flex-basis: calc((100% - 30px * 3) / 3);
-      // margin-left: 30px;
-      // margin-bottom: 30px;
       transition: $transition-animation;
 
       &:not(last-child) {
         flex-basis: calc(100% / 3 - 30px);
         margin-left: 30px;
-        margin-top: 30px;
+        margin-bottom: 30px;
       }
 
       &:hover,
