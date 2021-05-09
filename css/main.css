@@ -138,21 +138,20 @@ button {
 }
 
 .btn {
-  display: block;
   width: 200px;
   height: 50px;
   padding-left: 29px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   outline: none;
+  border: none;
+  background: #2196f3;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: background-color color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow color cubic-bezier(0.4, 0, 0.2, 1) 250ms, border-radius color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   display: flex;
   align-items: center;
   text-align: center;
@@ -163,8 +162,6 @@ button {
 
 .btn:hover, .btn:focus {
   background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  outline: none;
 }
 
 .btn__hero {
@@ -203,7 +200,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
+  padding: 32px 32px;
   display: flex;
   align-items: center;
   color: #212121;
@@ -220,7 +217,6 @@ button {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  padding-bottom: 34px;
   color: #212121;
   display: block;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -243,8 +239,8 @@ button {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-  left: 0;
-  bottom: 0;
+  margin: 0 auto;
+  margin-top: 28px;
   color: #2196f3;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
@@ -513,6 +509,7 @@ button {
   .footer__address {
     display: block;
     text-align: center;
+    padding-bottom: 60px;
   }
   .footer .logo__footer {
     width: 100%;
@@ -523,9 +520,6 @@ button {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-  }
-  .footer .address__list {
-    padding-bottom: 60px;
   }
   .footer .address__item {
     text-align: center;
@@ -1075,12 +1069,11 @@ button {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
-    /* or 162% */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
   }
@@ -1110,7 +1103,7 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
   }
@@ -1398,6 +1391,7 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
     color: #212121;
   }
   .team__it {
@@ -1407,7 +1401,6 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 10px;
     margin-bottom: 16px;
     color: #757575;
   }
@@ -1467,6 +1460,7 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
     color: #212121;
   }
   .team__it {
@@ -1476,7 +1470,6 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 10px;
     margin-bottom: 16px;
     color: #757575;
   }
@@ -1533,6 +1526,7 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
     color: #212121;
   }
   .team__it {
@@ -1542,7 +1536,6 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 10px;
     margin-bottom: 16px;
     color: #757575;
   }
@@ -1791,6 +1784,11 @@ button {
     color: #2196f3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+  .filters__list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
   .btn-portfolio {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -1824,6 +1822,11 @@ button {
   .filters__item:focus, .filters__item:hover {
     color: #2196f3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  .filters__list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
   }
   .btn-portfolio {
     font-family: "Roboto", sans-serif;
