@@ -1426,6 +1426,13 @@ button {
     align-items: center;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
+  .contact__item__link.mail {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .contact__item__link.tel {
+    padding-bottom: 0px;
+  }
   .contact__item__link:hover, .contact__item__link:focus {
     color: #2196f3;
     fill: #2196f3;

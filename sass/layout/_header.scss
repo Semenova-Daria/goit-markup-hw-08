@@ -266,6 +266,15 @@
         align-items: center;
         transition: $transition-animation;
 
+        &.mail {
+          padding-top: 0px;
+          margin-bottom: 0px;
+        }
+
+        &.tel {
+          padding-bottom: 0px;
+        }
+
         &:hover,
         &:focus {
           color: $active-color;
