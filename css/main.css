@@ -1173,6 +1173,11 @@ button {
     flex-wrap: nowrap;
   }
   .subscribe__input {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     width: 360px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1190,9 +1195,6 @@ button {
     border: 1px solid #2196f3;
   }
   .subscribe__input input[name="email"] {
-    color: #ffffff;
-  }
-  .subscribe input[name="email"] {
     color: #ffffff;
   }
   .subscribe__send {
@@ -1230,7 +1232,7 @@ button {
     left: 0;
     width: 100vw;
     height: 100vh;
-    max-width: 480px;
+    max-width: 767px;
     z-index: 100;
     padding: 48px 40px;
     background-color: #ffffff;
@@ -1351,8 +1353,6 @@ button {
     display: flex;
   }
   .contact {
-    padding-top: 20px;
-    padding-bottom: 20px;
     display: inline-block;
     align-items: center;
     margin-left: auto;
@@ -1361,9 +1361,6 @@ button {
     display: flex;
     align-items: center;
     fill: #757575;
-  }
-  .contact__item:not(:last-child) {
-    margin-bottom: 10px;
   }
   .contact__link {
     display: flex;
@@ -1375,6 +1372,13 @@ button {
     letter-spacing: 0.02em;
     color: #757575;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+  .contact__link.mail {
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  .contact__link.tel {
+    padding-bottom: 20px;
   }
   .contact__link:hover, .contact__link:focus {
     color: #2196f3;
@@ -1400,7 +1404,7 @@ button {
     display: flex;
     align-items: center;
     fill: #757575;
-    margin-bottom: 0;
+    margin-top: 0;
   }
   .contact__item:not(:last-child) {
     margin-right: 50px;
@@ -1621,8 +1625,7 @@ button {
   .features {
     display: flex;
     align-items: center;
-    padding-top: 94px;
-    padding-bottom: 0;
+    padding: 94px 0;
   }
   .features__list {
     display: flex;
@@ -1684,7 +1687,7 @@ button {
   .about {
     display: flex;
     align-items: center;
-    padding: 94px 0;
+    padding-bottom: 94px;
   }
   .about__title {
     font-family: "Roboto", sans-serif;
@@ -1861,8 +1864,7 @@ button {
 @media screen and (min-width: 1200px) {
   .team {
     background: #f5f4fa;
-    padding-bottom: 94px 0;
-    padding-top: 94px 0;
+    padding: 94px 0;
   }
   .team__title {
     font-family: "Roboto", sans-serif;

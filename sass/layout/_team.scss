@@ -158,8 +158,7 @@
 @media screen and (min-width: 1200px) {
   .team {
     background: #f5f4fa;
-    padding-bottom: $section-p;
-    padding-top: $section-p;
+    padding: $section-p;
 
     &__title {
       @include font();

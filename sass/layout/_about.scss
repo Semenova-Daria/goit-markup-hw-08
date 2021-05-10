@@ -14,7 +14,7 @@
   .about {
     display: flex;
     align-items: center;
-    padding: $section-p;
+    padding-bottom: 94px;
 
     &__title {
       @include font();
