@@ -244,37 +244,40 @@
       &:not(:last-child) {
         margin-right: 50px;
       }
+    }
+    // &__icon {
+    //   display: flex;
+    //   align-items: center;
+    //   margin-right: 10px;
+    // }
 
-      &__icon {
-        display: flex;
-        align-items: center;
-        margin-right: 10px;
+    &__link {
+      display: flex;
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.15;
+      letter-spacing: 0.02em;
+      color: $secondary-color;
+      display: flex;
+      align-items: center;
+      transition: $transition-animation;
+
+      &.mail {
+        padding: 32px 0;
+        margin-bottom: 0px;
       }
 
-      &__link {
-        display: flex;
-        font-family: $main-font;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.15;
-        letter-spacing: 0.02em;
-        color: $secondary-color;
-        display: flex;
-        align-items: center;
-        transition: $transition-animation;
+      &.tel {
+        padding: 32px 0;
+      }
 
-        &.mail {
-          padding: 32px 0;
-          margin-bottom: 0px;
-        }
+      &:hover,
+      &:focus {
+        color: $active-color;
+        fill: $active-color;
 
-        &.tel {
-          padding: 32px 0;
-        }
-
-        &:hover,
-        &:focus {
-          color: $active-color;
+        .contact__icon {
           fill: $active-color;
         }
       }

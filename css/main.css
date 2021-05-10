@@ -1418,12 +1418,7 @@ button {
   .contact__item:not(:last-child) {
     margin-right: 50px;
   }
-  .contact__item__icon {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-  }
-  .contact__item__link {
+  .contact__link {
     display: flex;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -1435,15 +1430,18 @@ button {
     align-items: center;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
-  .contact__item__link.mail {
+  .contact__link.mail {
     padding: 32px 0;
     margin-bottom: 0px;
   }
-  .contact__item__link.tel {
+  .contact__link.tel {
     padding: 32px 0;
   }
-  .contact__item__link:hover, .contact__item__link:focus {
+  .contact__link:hover, .contact__link:focus {
     color: #2196f3;
+    fill: #2196f3;
+  }
+  .contact__link:hover .contact__icon, .contact__link:focus .contact__icon {
     fill: #2196f3;
   }
 }
