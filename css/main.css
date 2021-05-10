@@ -328,7 +328,7 @@ button {
   .close-icon:hover, .close-icon:focus {
     fill: #2196f3;
   }
-  .close-icon .is-hidden {
+  .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -372,7 +372,7 @@ button {
   .close-icon:hover, .close-icon:focus {
     fill: #2196f3;
   }
-  .close-icon .is-hidden {
+  .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
