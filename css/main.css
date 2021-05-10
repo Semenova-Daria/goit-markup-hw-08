@@ -291,7 +291,51 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: #ffffff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 320px;
+    height: 610px;
+    overflow-y: visible;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 100;
+  }
+  .modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .close-icon:hover, .close-icon:focus {
+    fill: #2196f3;
+  }
+  .close-icon .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .modal {
     position: fixed;
     top: 50%;
@@ -328,7 +372,7 @@ button {
   .close-icon:hover, .close-icon:focus {
     fill: #2196f3;
   }
-  .is-hidden {
+  .close-icon .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1216,24 +1260,6 @@ button {
   border: 1px solid #ececec;
 }
 
-@media screen and (max-width: 479px) {
-  .mobile-menu__item:not(:last-child) {
-    padding-bottom: 15px;
-  }
-  .mobile-menu__link {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-  }
-  .mobile-contact__tel {
-    font-size: 30px;
-    line-height: 1.33;
-    letter-spacing: 0.02em;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .logo {
     font-size: 24px;
@@ -1273,7 +1299,10 @@ button {
     top: 10px;
     right: 15px;
   }
-  .mobile-menu__item {
+  .mobile-menu__item:not(:last-child) {
+    padding-bottom: 30px;
+  }
+  .mobile-menu__link {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 40px;
@@ -1281,16 +1310,53 @@ button {
     letter-spacing: 0.02em;
     color: #212121;
   }
-  .mobile-menu__item:not(:last-child) {
-    padding-bottom: 30px;
-  }
-  .mobile-menu__link {
-    color: #212121;
-  }
   .mobile-menu__link:hover, .mobile-menu__link:focus {
     color: #2196f3;
   }
-  .mobile-contact {
+}
+
+@media screen and (max-width: 767px) and (max-width: 479px) {
+  .mobile-menu .mobile-menu__item:not(:last-child) {
+    padding-bottom: 15px;
+  }
+  .mobile-menu .mobile-menu__link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .mobile-menu .contact-mobile {
+    padding-bottom: 40px;
+  }
+  .mobile-menu .contact-mobile__tel {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .mobile-menu .contact-mobile__mailto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  .mobile-menu .mobile-social__list {
+    font-size: 11px;
+    line-height: 1.17;
+  }
+  .mobile-menu .mobile-social__item:not(:last-child)::after {
+    width: 11px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-communication {
     flex-direction: column-reverse;
     margin-top: auto;
     left: auto;
@@ -1321,16 +1387,16 @@ button {
   .mobile-social__list {
     display: flex;
     flex-wrap: wrap;
-  }
-  .mobile-social__item {
-    display: flex;
-    align-items: center;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
+  }
+  .mobile-social__item {
+    display: flex;
+    align-items: center;
   }
   .mobile-social__item:not(:last-child)::after {
     content: "";
@@ -1529,6 +1595,7 @@ button {
     max-width: 1600px;
     background-color: #c4c4c4;
     padding: 200px 0;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;

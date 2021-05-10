@@ -2,32 +2,6 @@
   border: 1px solid #ececec;
 }
 
-@media screen and (max-width: 479px) {
-  .mobile-menu {
-    &__item {
-      &:not(:last-child) {
-        padding-bottom: 15px;
-      }
-    }
-
-    &__link {
-      font-family: $main-font;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.5;
-      letter-spacing: 0.02em;
-    }
-  }
-
-  .mobile-contact {
-    &__tel {
-      font-size: 30px;
-      line-height: 1.33;
-      letter-spacing: 0.02em;
-    }
-  }
-}
-
 @media screen and (max-width: 767px) {
   .logo {
     font-size: 24px;
@@ -76,20 +50,17 @@
     }
 
     &__item {
-      font-family: $main-font;
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 1.17;
-      letter-spacing: 0.02em;
-
-      color: $accent-color;
-
       &:not(:last-child) {
         padding-bottom: 30px;
       }
     }
 
     &__link {
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
       color: $accent-color;
 
       &:hover,
@@ -97,15 +68,72 @@
         color: $active-color;
       }
     }
+
+    @media screen and (max-width: 479px) {
+      .mobile-menu {
+        &__item {
+          &:not(:last-child) {
+            padding-bottom: 15px;
+          }
+        }
+
+        &__link {
+          font-family: $main-font;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1.5;
+          letter-spacing: 0.02em;
+          color: $accent-color;
+        }
+      }
+
+      .contact-mobile {
+        padding-bottom: 40px;
+
+        &__tel {
+          font-family: $main-font;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1.5;
+          letter-spacing: 0.02em;
+
+          color: #2196f3;
+        }
+
+        &__mailto {
+          font-family: $main-font;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1.55;
+          letter-spacing: 0.02em;
+
+          color: $secondary-color;
+        }
+      }
+
+      .mobile-social {
+        &__list {
+          font-size: 11px;
+          line-height: 1.17;
+        }
+
+        &__item {
+          &:not(:last-child)::after {
+            width: 11px;
+          }
+        }
+      }
+    }
   }
 
-  .mobile-contact {
+  .mobile-communication {
     flex-direction: column-reverse;
     margin-top: auto;
 
     left: auto;
     bottom: 0;
   }
+
   .contact-mobile {
     padding-bottom: 64px;
 
@@ -121,7 +149,6 @@
       font-size: 34px;
       line-height: 1.18;
       letter-spacing: 0.02em;
-
       color: #2196f3;
     }
 
@@ -140,10 +167,6 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
-    }
-    &__item {
-      display: flex;
-      align-items: center;
 
       font-family: $main-font;
       font-weight: 500;
@@ -151,6 +174,11 @@
       line-height: 1.22;
       letter-spacing: 0.02em;
       color: $active-color;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
 
       &:not(:last-child)::after {
         content: "";
