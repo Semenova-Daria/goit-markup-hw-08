@@ -1216,7 +1216,7 @@ button {
   border: 1px solid #ececec;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .mobile-menu__item:not(:last-child) {
     padding-bottom: 15px;
   }
