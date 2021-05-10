@@ -930,6 +930,11 @@ button {
     align-items: center;
   }
   .subscribe__input {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1060,6 +1065,11 @@ button {
 }
 
 .subscribe__input {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1358,7 +1368,7 @@ button {
     margin-left: auto;
   }
   .contact__item {
-    display: flex;
+    display: block;
     align-items: center;
     fill: #757575;
   }
@@ -1404,7 +1414,6 @@ button {
     display: flex;
     align-items: center;
     fill: #757575;
-    margin-top: 0;
   }
   .contact__item:not(:last-child) {
     margin-right: 50px;
@@ -1427,11 +1436,11 @@ button {
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
   .contact__item__link.mail {
-    padding-top: 0px;
+    padding: 32px 0;
     margin-bottom: 0px;
   }
   .contact__item__link.tel {
-    padding-bottom: 0px;
+    padding: 32px 0;
   }
   .contact__item__link:hover, .contact__item__link:focus {
     color: #2196f3;
